@@ -47,15 +47,27 @@ class RegisterVC: UIViewController {
         let password = passwordTxt.text , password.isNotEmpty
         else {return}
         activityIndicator.startAnimating()
-        Auth.auth().createUser(withEmail: email, password: password) { (AuthDataResult, err) in
-            if let error = err {
-                debugPrint(error)
-                return
-        }
-            self.activityIndicator.stopAnimating()
-            print("success register")
         
-    }
+        guard let AuthUser = Auth.auth().currentUser else {return}
+        
+        
+        // make the credinital part
+        let credinital = EmailAuthProvider.credential(withEmail: email, password: password)
+        
+        AuthUser.link(with: credinital) { (AuthDataResult, error) in
+            if let error = error {
+                self.activityIndicator.stopAnimating()
+                debugPrint(error)
+                self.handleFireAuthError(error: error)
+
+                return
+            }
+            self.activityIndicator.stopAnimating()
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+        
+    
     
 }
 }

@@ -12,6 +12,11 @@
 		D0D517E424140E3A002E52A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D517E224140E3A002E52A6 /* Main.storyboard */; };
 		D0D517E624140E3B002E52A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D517E524140E3B002E52A6 /* Assets.xcassets */; };
 		D0D517E924140E3B002E52A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D517E724140E3B002E52A6 /* LaunchScreen.storyboard */; };
+		D0D517F724140E60002E52A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D517F624140E60002E52A6 /* AppDelegate.swift */; };
+		D0D517F924140E60002E52A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D517F824140E60002E52A6 /* ViewController.swift */; };
+		D0D517FC24140E60002E52A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D517FA24140E60002E52A6 /* Main.storyboard */; };
+		D0D5180124140E61002E52A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D517FF24140E61002E52A6 /* LaunchScreen.storyboard */; };
+		D0D5180724140E7D002E52A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D517E524140E3B002E52A6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,23 @@
 		D0D517E524140E3B002E52A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0D517E824140E3B002E52A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0D517EA24140E3B002E52A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D517F424140E60002E52A6 /* SimpleECommerceAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleECommerceAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D517F624140E60002E52A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0D517F824140E60002E52A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0D517FB24140E60002E52A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0D5180024140E61002E52A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0D5180224140E61002E52A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0D517D824140E3A002E52A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D517F124140E60002E52A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +56,9 @@
 		D0D517D224140E3A002E52A6 = {
 			isa = PBXGroup;
 			children = (
+				D0D5180624140E67002E52A6 /* shared */,
 				D0D517DD24140E3A002E52A6 /* SimpleECommerce */,
+				D0D517F524140E60002E52A6 /* SimpleECommerceAdmin */,
 				D0D517DC24140E3A002E52A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D517DB24140E3A002E52A6 /* SimpleECommerce.app */,
+				D0D517F424140E60002E52A6 /* SimpleECommerceAdmin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +78,30 @@
 				D0D517DE24140E3A002E52A6 /* AppDelegate.swift */,
 				D0D517E024140E3A002E52A6 /* ViewController.swift */,
 				D0D517E224140E3A002E52A6 /* Main.storyboard */,
-				D0D517E524140E3B002E52A6 /* Assets.xcassets */,
 				D0D517E724140E3B002E52A6 /* LaunchScreen.storyboard */,
 				D0D517EA24140E3B002E52A6 /* Info.plist */,
 			);
 			path = SimpleECommerce;
+			sourceTree = "<group>";
+		};
+		D0D517F524140E60002E52A6 /* SimpleECommerceAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				D0D517F624140E60002E52A6 /* AppDelegate.swift */,
+				D0D517F824140E60002E52A6 /* ViewController.swift */,
+				D0D517FA24140E60002E52A6 /* Main.storyboard */,
+				D0D517FF24140E61002E52A6 /* LaunchScreen.storyboard */,
+				D0D5180224140E61002E52A6 /* Info.plist */,
+			);
+			path = SimpleECommerceAdmin;
+			sourceTree = "<group>";
+		};
+		D0D5180624140E67002E52A6 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				D0D517E524140E3B002E52A6 /* Assets.xcassets */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +124,23 @@
 			productReference = D0D517DB24140E3A002E52A6 /* SimpleECommerce.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D0D517F324140E60002E52A6 /* SimpleECommerceAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D5180324140E61002E52A6 /* Build configuration list for PBXNativeTarget "SimpleECommerceAdmin" */;
+			buildPhases = (
+				D0D517F024140E60002E52A6 /* Sources */,
+				D0D517F124140E60002E52A6 /* Frameworks */,
+				D0D517F224140E60002E52A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleECommerceAdmin;
+			productName = SimpleECommerceAdmin;
+			productReference = D0D517F424140E60002E52A6 /* SimpleECommerceAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +152,9 @@
 				ORGANIZATIONNAME = "Ahmed Ragab";
 				TargetAttributes = {
 					D0D517DA24140E3A002E52A6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D0D517F324140E60002E52A6 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				D0D517DA24140E3A002E52A6 /* SimpleECommerce */,
+				D0D517F324140E60002E52A6 /* SimpleECommerceAdmin */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +189,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0D517F224140E60002E52A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D5180124140E61002E52A6 /* LaunchScreen.storyboard in Resources */,
+				D0D5180724140E7D002E52A6 /* Assets.xcassets in Resources */,
+				D0D517FC24140E60002E52A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +208,15 @@
 			files = (
 				D0D517E124140E3A002E52A6 /* ViewController.swift in Sources */,
 				D0D517DF24140E3A002E52A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D517F024140E60002E52A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D517F924140E60002E52A6 /* ViewController.swift in Sources */,
+				D0D517F724140E60002E52A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +235,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0D517E824140E3B002E52A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D517FA24140E60002E52A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D517FB24140E60002E52A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D517FF24140E61002E52A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D5180024140E61002E52A6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,6 +408,40 @@
 			};
 			name = Release;
 		};
+		D0D5180424140E61002E52A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleECommerceAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.-SimpleECommerceAdmin.SimpleECommerceAdmin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0D5180524140E61002E52A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleECommerceAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.-SimpleECommerceAdmin.SimpleECommerceAdmin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +459,15 @@
 			buildConfigurations = (
 				D0D517EE24140E3B002E52A6 /* Debug */,
 				D0D517EF24140E3B002E52A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D5180324140E61002E52A6 /* Build configuration list for PBXNativeTarget "SimpleECommerceAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D5180424140E61002E52A6 /* Debug */,
+				D0D5180524140E61002E52A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
